@@ -18,7 +18,7 @@ Este proyecto tiene como objetivo predecir la evasión (churn) de clientes de un
 - [Resultados](#resultados)
 - [Cómo ejecutar el proyecto](#cómo-ejecutar-el-proyecto)
 - [Recomendaciones y próximos pasos](#recomendaciones-y-próximos-pasos)
-- [Licencia](#licencia)
+
 
 ---
 
@@ -95,65 +95,71 @@ memory usage: 1.2+ MB
 ├── requirements.txt       # Librerías necesarias
 └── churn_analysis.ipynb   # Notebook principal
 
-
-Cómo usar este repositorio
-Clona el repositorio:
+```
+##Cómo usar este repositorio
+###Clona el repositorio:
 
 git clone https://github.com/tu_usuario/TelecomX_P2_Challange.git
 
-Instala los requerimientos:
+###Instala los requerimientos:
 
   pip install -r requirements.txt
 
-Abre el notebook en Colab
-
-
+###Abre el notebook en Colab
+Ejecuta los notebooks
+  conectese a colab , suba el archivo
+  suba el data set
+  ejecute
 
 ## Flujo del Proyecto
-Preprocesamiento de Datos
+###Preprocesamiento de Datos
 
-Limpieza de datos,
+###Limpieza de datos,
 
-codificación de variables categóricas
+###codificación de variables categóricas
 
-Escalado de variables numéricas
+###Escalado de variables numéricas
 
-Análisis de correlación y multicolinealidad
+###Análisis de correlación y multicolinealidad
 
-Selección de variables relevantes
+###Selección de variables relevantes
 
-Modelado Predictivo
+###Modelado Predictivo
 
-Entrenamiento y evaluación de modelos:
+##Entrenamiento y evaluación de modelos:
 * Baseline
 * Regresión Logística
-KNN
-Árbol de Decisión
-Random Forest
-XGBoost ✅
-LightGBM
+* KNN
+* Árbol de Decisión
+* Random Forest
+* XGBoost ✅
+* LightGBM
 
-Balanceo con SMOTE
+##Balanceo con SMOTE
 
-Ajuste de umbral de clasificación
+##Ajuste de umbral de clasificación
 
-Evaluación de Modelos
+##Evaluación de Modelos
 
-Métricas utilizadas: AUC-ROC, Recall, Precisión, F1-Score
+Métricas utilizadas: 
+* AUC-ROC,
+* Recall,
+* Precisión,
+* F1-Score
 
-Comparación y selección del Champion Model
+##Comparación y selección del Champion Model
 
-Modelo elegido ( Champion): **XGBoost**
+##Modelo elegido ( Champion): **XGBoost**
 
 * Mejor balance entre recall y capacidad discriminativa (AUC)
 
-Importancia de variables:
+##Importancia de variables:
 
 * Contrato a dos años (Contract_TwoYear)
 * Tipo de internet (InternetService_Fiber optic)
 * Antigüedad del cliente (customer_tenure)
 
-Prueba en entorno productivo
+##Prueba en entorno productivo
 
 Se construye un pipeline con datos sintéticos para simular la aplicación del modelo en producción.
 
@@ -164,68 +170,22 @@ Se construye un pipeline con datos sintéticos para simular la aplicación del m
 | **RandomForest** | 0.806   | 0.837  | Alta     | Buen rendimiento, pero menor capacidad discriminativa. |
 
 
- Recomendaciones Estratégicas
+##Recomendaciones Estratégicas
 Basado en las variables más importantes del modelo Champion (XGBoost):
 
-💡 Incentivar contratos de largo plazo: Los clientes con contrato de dos años presentan menor propensión a cancelar.
+* Incentivar contratos de largo plazo: Los clientes con contrato de dos años presentan menor propensión a cancelar.
+* Evaluar la experiencia de clientes con internet de fibra óptica: Este grupo muestra mayor riesgo de churn.
+* Retener a clientes nuevos (<12 meses): Son más propensos a irse. Estrategias de onboarding o beneficios exclusivos pueden ayudar.
+* Revisar métodos de pago: Quienes usan Electronic check tienen mayor tasa de churn. Puede implicar menor fidelización.
 
-📶 Evaluar la experiencia de clientes con internet de fibra óptica: Este grupo muestra mayor riesgo de churn.
+##Análisis exploratorio
+>Se realizaron análisis visuales y estadísticos para entender las variables más asociadas al abandono de clientes. Entre los hallazgos:
 
-⏳ Retener a clientes nuevos (<12 meses): Son más propensos a irse. Estrategias de onboarding o beneficios exclusivos pueden ayudar.
+* Los clientes con contratos mensuales tienden a abandonar más.
+* Los que no tienen servicios adicionales (como internet o soporte técnico) muestran mayor churn.
 
-💳 Revisar métodos de pago: Quienes usan Electronic check tienen mayor tasa de churn. Puede implicar menor fidelización.
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-Análisis exploratorio
-Se realizaron análisis visuales y estadísticos para entender las variables más asociadas al abandono de clientes. Entre los hallazgos:
+Adicionalmente se agrego un dashboard para visualizar los resultados
 
-Los clientes con contratos mensuales tienden a abandonar más.
-
-Los que no tienen servicios adicionales (como internet o soporte técnico) muestran mayor churn.
-
-🤖 Modelado predictivo
-Se utilizaron modelos de clasificación como:
-
-Regresión logística
-
-Árboles de decisión
-
-Random Forest
-
-XGBoost (opcional)
-
-Se evaluaron con métricas como precisión, recall, F1-score y matriz de confusión.
-
-✅ Resultados
-Mejor modelo: Random Forest con una precisión del XX% y recall del XX%.
-
-Variables más importantes: tipo de contrato, uso mensual, antigüedad como cliente.
-
-▶️ Cómo ejecutar el proyecto
-Clona el repositorio
-
-git clone https://github.com/tuusuario/churn-prediction.git
-  cd churn-prediction
-
-Crea un entorno virtual y activa
-  python -m venv env
-  source env/bin/activate  # Windows: env\Scripts\activate
-
-Instala los requerimientos
-  pip install -r requirements.txt
-
-Ejecuta los notebooks
-  conectese a colab , suba el archivo
-  suba el data set
-  ejecute
-📌 Recomendaciones y próximos pasos
-Probar modelos de boosting (como XGBoost o LightGBM)
-
-Desplegar el modelo como API
-
-Crear un dashboard para visualizar los resultados
-
-📝 Licencia
-Este proyecto está bajo la Licencia MIT - ver el archivo LICENSE para más detalles.
 
 
 Autor
