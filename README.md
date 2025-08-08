@@ -185,8 +185,8 @@ Basado en las variables más importantes del modelo Champion (XGBoost):
 * Retener a clientes nuevos (<12 meses): Son más propensos a irse. Estrategias de onboarding o beneficios exclusivos pueden ayudar.
 * Revisar métodos de pago: Quienes usan Electronic check tienen mayor tasa de churn. Puede implicar menor fidelización.
 
-##Análisis exploratorio
->Se realizaron análisis visuales y estadísticos para entender las variables más asociadas al abandono de clientes. Entre los hallazgos:
+Análisis exploratorio
+Se realizaron análisis visuales y estadísticos para entender las variables más asociadas al abandono de clientes. Entre los hallazgos:
 
 * Los clientes con contratos mensuales tienden a abandonar más.
 * Los que no tienen servicios adicionales (como internet o soporte técnico) muestran mayor churn.
@@ -195,8 +195,10 @@ Adicionalmente se agrego un dashboard para visualizar los resultados
 
 ...
 
-Autor
-Lorenzo Arceu Morla
-Proyecto de análisis predictivo en el contexto de cancelación de servicios en telecomunicaciones.
+## 👤 Autor
 
-🔗 [Agrega aquí tu LinkedIn, GitHub u otro enlace]
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white)](https://github.com/LarceuM)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lorenzoarceumorla)
+
+**Lorenzo Arceu Morla**  
+Proyecto de análisis predictivo en el contexto de cancelación de servicios en telecomunicaciones.
