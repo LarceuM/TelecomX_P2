@@ -111,16 +111,18 @@ Se procede a la carga de los datos desde la planilla Excel generado en el Challa
 >* 'account_Charges_Monthly', Modelo de Normalizacion StandardScaler, Diferencias fuertes entre cargos bajos y altos.
 >* 'account_Charges_Total', Modelo de Normalizacion Log y StandardScaler, Escala muy asimétrica y valores extremos
 
-* Correlación y Selección de Variables , se analizo la correlacion de las variables ademas se grafico la matriz de correlacion y se genero el VIF , con la intencion de determinar las variables mas relevantes.
+* Correlación y Selección de Variables
+>se analizo la correlacion de las variables ademas se grafico la matriz de correlacion y se genero el VIF , con la intencion de determinar las variables mas relevantes.
 
-* Selección de variables relevantes, se genera un subconjunto del DataFrame con las variables sugeridas desde el analisis
-*     'internet_InternetService_Fiber optic',
-*     'account_PaymentMethod_Electronic check',
-*     'account_PaperlessBilling_Yes',
-*     'account_Charges_Monthly_scaled',
-*     'customer_SeniorCitizen',
-*     'account_Contract_Two year',
-*     'customer_tenure_scaled'
+* Selección de variables relevantes,
+>se genera un subconjunto del DataFrame con las variables sugeridas desde el analisis
+>*     'internet_InternetService_Fiber optic',
+>*     'account_PaymentMethod_Electronic check',
+>*     'account_PaperlessBilling_Yes',
+>*     'account_Charges_Monthly_scaled',
+>*     'customer_SeniorCitizen',
+>*     'account_Contract_Two year',
+>*     'customer_tenure_scaled'
 ...
 
 ## Modelado predictivo
@@ -134,9 +136,9 @@ Se procede a la carga de los datos desde la planilla Excel generado en el Challa
 >* XGBoost ✅
 >* LightGBM
 
-###Balanceo con SMOTE
+* Balanceo con SMOTE
 
-###Ajuste de umbral de clasificación
+* Ajuste de umbral de clasificación
 ...
 
 ## Resultados
