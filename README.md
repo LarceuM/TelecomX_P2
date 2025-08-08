@@ -1,6 +1,6 @@
 # TelecomX_P2
 Analisis de los clientes que renuncian (dejan) a TelecomX 
-# 📊 Predicción de Cancelación de Clientes (Churn Prediction)
+# Predicción de Cancelación de Clientes (Churn Prediction)
 
 Este proyecto tiene como objetivo predecir la evasión (churn) de clientes de una empresa de telecomunicaciones. Basándose en características del cliente, tipo de servicio y comportamiento de pago, se construye un modelo predictivo para ayudar a la empresa a anticiparse a la pérdida de clientes y tomar decisiones estratégicas para su retención. 
 
@@ -26,7 +26,6 @@ Este proyecto tiene como objetivo predecir la evasión (churn) de clientes de un
 
 Identificar a los clientes con mayor probabilidad de abandonar la compañía utilizando técnicas de análisis de datos y modelos de predicción supervisada.
 generar una  modelo que pueda ser usando en ambientes productivos  y generar concluciones que ayuden a enfrentar y adelantarse a la posibilidad de abondono de la compañia haciendo recomendaciones de trabajo con las variables mas  relevantes.
-
 
 ---
 
@@ -72,7 +71,7 @@ dtypes: float64(1), int64(2), object(18)
 memory usage: 1.2+ MB
 ```
 
-## 🛠 Herramientas utilizadas
+## Herramientas utilizadas
 
 - Python 3.11+
 - Pandas
@@ -84,7 +83,7 @@ memory usage: 1.2+ MB
 
 ---
 
-## 🗂 Estructura del proyecto
+## Estructura del proyecto
 
 ```bash
 📦 churn-prediction
@@ -109,7 +108,8 @@ Instala los requerimientos:
 Abre el notebook en Colab
 
 
-Flujo del Proyecto
+
+## Flujo del Proyecto
 Preprocesamiento de Datos
 
 Limpieza de datos,
