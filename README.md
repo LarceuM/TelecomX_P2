@@ -96,22 +96,7 @@ memory usage: 1.2+ MB
 └── churn_analysis.ipynb   # Notebook principal
 
 ```
-##Cómo usar este repositorio
-###Clona el repositorio:
-
-git clone https://github.com/tu_usuario/TelecomX_P2_Challange.git
-
-###Instala los requerimientos:
-
-  pip install -r requirements.txt
-
-###Abre el notebook en Colab
-Ejecuta los notebooks
-  conectese a colab , suba el archivo
-  suba el data set
-  ejecute
-
-## Flujo del Proyecto
+##Análisis-exploratorio
 ###Preprocesamiento de Datos
 
 ###Limpieza de datos,
@@ -125,7 +110,8 @@ Ejecuta los notebooks
 ###Selección de variables relevantes
 
 ###Modelado Predictivo
-
+```
+```
 ##Entrenamiento y evaluación de modelos:
 * Baseline
 * Regresión Logística
@@ -138,7 +124,8 @@ Ejecuta los notebooks
 ##Balanceo con SMOTE
 
 ##Ajuste de umbral de clasificación
-
+```
+```
 ##Evaluación de Modelos
 
 Métricas utilizadas: 
@@ -158,10 +145,11 @@ Métricas utilizadas:
 * Contrato a dos años (Contract_TwoYear)
 * Tipo de internet (InternetService_Fiber optic)
 * Antigüedad del cliente (customer_tenure)
-
+```
+```
 ##Prueba en entorno productivo
 
-Se construye un pipeline con datos sintéticos para simular la aplicación del modelo en producción.
+Se construye un set de datos sintéticos para simular la aplicación del modelo en producción.
 
 | Modelo           | AUC-ROC | Recall | F1-Score | Observaciones Clave                                    |
 | ---------------- | ------- | ------ | -------- | ------------------------------------------------------ |
@@ -186,8 +174,22 @@ Basado en las variables más importantes del modelo Champion (XGBoost):
 
 Adicionalmente se agrego un dashboard para visualizar los resultados
 
+##Cómo usar este repositorio
+###Clona el repositorio:
 
+git clone https://github.com/tu_usuario/TelecomX_P2_Challange.git
 
+###Instala los requerimientos:
+
+  pip install -r requirements.txt
+
+###Abre el notebook en Colab
+Ejecuta los notebooks
+  conectese a colab , suba el archivo
+  suba el data set
+  ejecute
+```
+```
 Autor
 Lorenzo Arceu Morla
 Proyecto de análisis predictivo en el contexto de cancelación de servicios en telecomunicaciones.
