@@ -40,6 +40,9 @@ La retención de clientes es clave en las empresas de telecomunicaciones. Este p
 
 El dataset, contiene información demográfica, de servicios contratados y comportamiento histórico de clientes, incluyendo si abandonaron o no la compañía.  
 , nace desde el archivo "TelecomX_Data.json"   el que es convertido y tratado  su estructura original esta compuesta por 7.267 registros y 21 columnas  las cuales se detalla  acontinuacion:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 7267 entries, 0 to 7266
+Data columns (total 21 columns):
  #   Column                     Non-Null Count  Dtype  
 ---  ------                     --------------  -----  
  0   customerID                 7267 non-null   object 
@@ -63,6 +66,9 @@ El dataset, contiene información demográfica, de servicios contratados y compo
  18  account_PaymentMethod      7267 non-null   object 
  19  account_Charges_Monthly    7267 non-null   float64
  20  account_Charges_Total      7267 non-null   object 
+dtypes: float64(1), int64(2), object(18)
+memory usage: 1.2+ MB
+
 
 ---
 
