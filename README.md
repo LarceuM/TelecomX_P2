@@ -116,13 +116,13 @@ Se procede a la carga de los datos desde la planilla Excel generado en el Challa
 
 * Selección de variables relevantes,
 >se genera un subconjunto del DataFrame con las variables sugeridas desde el analisis
->*     'internet_InternetService_Fiber optic',
->*     'account_PaymentMethod_Electronic check',
->*     'account_PaperlessBilling_Yes',
->*     'account_Charges_Monthly_scaled',
->*     'customer_SeniorCitizen',
->*     'account_Contract_Two year',
->*     'customer_tenure_scaled'
+>* internet_InternetService_Fiber optic
+>* account_PaymentMethod_Electronic check
+>* account_PaperlessBilling_Yes
+>* account_Charges_Monthly_scaled
+>* customer_SeniorCitizen
+>* account_Contract_Two year
+>* customer_tenure_scaled
 ...
 
 ## Modelado predictivo
