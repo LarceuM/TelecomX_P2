@@ -98,11 +98,13 @@ memory usage: 1.2+ MB
 ```
 ## Análisis exploratorio
 
-###Preprocesamiento de Datos
-
-###Limpieza de datos,
-
-###codificación de variables categóricas
+* Preprocesamiento de Datos
+Se procede a la carga de los datos desde la planilla Excel generado en el Challange anterior ya que los datos originalmente venian en formato .json
+* Borrado de Columnas no relevantes para analisis,  customerID y cuenta_diaria
+* Encoding, Transformar las variables categóricas a formato numérico para hacerlas compatibles con los algoritmos de machine learning. Se utilizara el método Onehotencoding 
+* Verificación de la Proporción de Cancelación (Churn)
+>* Activos 73.4 %
+>* Churn 26.6 %
 
 ###Escalado de variables numéricas
 
