@@ -2,7 +2,7 @@
 Analisis de los clientes que renuncian (dejan) a TelecomX 
 # 📊 Predicción de Cancelación de Clientes (Churn Prediction)
 
-Este proyecto utiliza análisis de datos y modelos de machine learning para predecir qué clientes podrían abandonar una compañía de telecomunicaciones. Se ha desarrollado en Python utilizando `pandas`, `scikit-learn` y otras librerías del ecosistema de ciencia de datos.
+Este proyecto tiene como objetivo predecir la evasión (churn) de clientes de una empresa de telecomunicaciones. Basándose en características del cliente, tipo de servicio y comportamiento de pago, se construye un modelo predictivo para ayudar a la empresa a anticiparse a la pérdida de clientes y tomar decisiones estratégicas para su retención. 
 
 ---
 
@@ -45,12 +45,13 @@ El dataset contiene información demográfica, de servicios contratados y compor
 
 ## 🛠 Herramientas utilizadas
 
-- Python 3.X
+- Python 3.11+
 - Pandas
 - NumPy
 - Matplotlib / Seaborn
-- Scikit-learn
-- Jupyter Notebook
+- Scikit-learn,  XGBoost, LightGBM
+- SMOTE (balanceo de clases)
+- Jupyter Notebook / Google Colab
 
 ---
 
@@ -67,7 +68,96 @@ El dataset contiene información demográfica, de servicios contratados y compor
 └── churn_analysis.ipynb   # Notebook principal
 
 
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+ómo usar este repositorio
+Clona el repositorio:
 
+
+git clone https://github.com/tu_usuario/proyecto_telecomX_ML.git
+Instala los requerimientos:
+
+
+pip install -r requirements.txt
+Abre el notebook en Jupyter o Colab:
+
+
+jupyter notebook proyecto_telecomX_ML.ipynb
+🧠
+
+
+ Flujo del Proyecto
+Preprocesamiento de Datos
+
+Limpieza de datos, codificación de variables categóricas
+
+Escalado de variables numéricas
+
+Análisis de correlación y multicolinealidad
+
+Selección de variables relevantes
+
+Modelado Predictivo
+
+Entrenamiento y evaluación de modelos:
+
+Regresión Logística
+
+K-Nearest Neighbors
+
+Árbol de Decisión
+
+Random Forest
+
+XGBoost ✅
+
+LightGBM
+
+SVM
+
+Balanceo con SMOTE
+
+Ajuste de umbral de clasificación
+
+Evaluación de Modelos
+
+Métricas utilizadas: AUC-ROC, Recall, Precisión, F1-Score
+
+Comparación y selección del Champion Model
+
+Modelo Champion: XGBoost
+
+Mejor balance entre recall y capacidad discriminativa (AUC)
+
+Importancia de variables:
+
+Contrato a dos años (Contract_TwoYear)
+
+Tipo de internet (InternetService_Fiber optic)
+
+Antigüedad del cliente (customer_tenure)
+
+Prueba en entorno productivo
+
+Se construye un pipeline con datos sintéticos para simular la aplicación del modelo en producción.
+
+| Modelo           | AUC-ROC | Recall | F1-Score | Observaciones Clave                                    |
+| ---------------- | ------- | ------ | -------- | ------------------------------------------------------ |
+| **XGBoost**      | 0.834   | 0.846  | Alta     | Mejor balance general. Excelente para detectar churn.  |
+| **LightGBM**     | 0.816   | 0.832  | Alta     | Muy competitivo. Más rápido que XGBoost.               |
+| **RandomForest** | 0.806   | 0.837  | Alta     | Buen rendimiento, pero menor capacidad discriminativa. |
+
+
+ Recomendaciones Estratégicas
+Basado en las variables más importantes del modelo Champion (XGBoost):
+
+💡 Incentivar contratos de largo plazo: Los clientes con contrato de dos años presentan menor propensión a cancelar.
+
+📶 Evaluar la experiencia de clientes con internet de fibra óptica: Este grupo muestra mayor riesgo de churn.
+
+⏳ Retener a clientes nuevos (<12 meses): Son más propensos a irse. Estrategias de onboarding o beneficios exclusivos pueden ayudar.
+
+💳 Revisar métodos de pago: Quienes usan Electronic check tienen mayor tasa de churn. Puede implicar menor fidelización.
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 Análisis exploratorio
 Se realizaron análisis visuales y estadísticos para entender las variables más asociadas al abandono de clientes. Entre los hallazgos:
 
@@ -119,3 +209,10 @@ Crear un dashboard para visualizar los resultados
 
 📝 Licencia
 Este proyecto está bajo la Licencia MIT - ver el archivo LICENSE para más detalles.
+
+
+Autor
+Lorenzo Arceu Morla
+Proyecto de análisis predictivo en el contexto de cancelación de servicios en telecomunicaciones.
+
+🔗 [Agrega aquí tu LinkedIn, GitHub u otro enlace]
