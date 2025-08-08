@@ -96,7 +96,7 @@ memory usage: 1.2+ MB
 └── churn_analysis.ipynb   # Notebook principal
 
 ```
-##Análisis-exploratorio
+##Análisis exploratorio
 ###Preprocesamiento de Datos
 
 ###Limpieza de datos,
