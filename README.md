@@ -40,58 +40,6 @@ La retención de clientes es clave en las empresas de telecomunicaciones. Este p
 
 El dataset, contiene información demográfica, de servicios contratados y comportamiento histórico de clientes, incluyendo si abandonaron o no la compañía.  
 , nace desde el archivo "TelecomX_Data.json"   el que es convertido y tratado  su estructura original esta compuesta por 7.267 registros y 21 columnas  las cuales se detalla  acontinuacion:
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 7267 entries, 0 to 7266
-Data columns (total 21 columns):
- #   Column                     Non-Null Count  Dtype  
- 
----  ------                     --------------  -----  
-
- 0   customerID                 7267 non-null   object
- 
- 1   Churn                      7267 non-null   object 
- 
- 2   customer_gender            7267 non-null   object 
- 
- 3   customer_SeniorCitizen     7267 non-null   int64  
- 
- 4   customer_Partner           7267 non-null   object 
- 
- 5   customer_Dependents        7267 non-null   object 
- 
- 6   customer_tenure            7267 non-null   int64  
- 
- 7   phone_PhoneService         7267 non-null   object 
- 
- 8   phone_MultipleLines        7267 non-null   object 
- 
- 9   internet_InternetService   7267 non-null   object 
- 
- 10  internet_OnlineSecurity    7267 non-null   object 
- 
- 11  internet_OnlineBackup      7267 non-null   object 
- 
- 12  internet_DeviceProtection  7267 non-null   object 
- 
- 13  internet_TechSupport       7267 non-null   object 
- 
- 14  internet_StreamingTV       7267 non-null   object 
- 
- 15  internet_StreamingMovies   7267 non-null   object 
- 
- 16  account_Contract           7267 non-null   object 
- 
- 17  account_PaperlessBilling   7267 non-null   object 
- 
- 19  account_Charges_Monthly    7267 non-null   float64
- 
- 20  account_Charges_Total      7267 non-null   object 
- 
-dtypes: float64(1), int64(2), object(18)
-
-memory usage: 1.2+ MB
-
-## 📋 Información del DataFrame
 
 ```text
 <class 'pandas.core.frame.DataFrame'>
@@ -124,8 +72,6 @@ dtypes: float64(1), int64(2), object(18)
 memory usage: 1.2+ MB
 ```
 
----
-
 ## 🛠 Herramientas utilizadas
 
 - Python 3.11+
@@ -151,23 +97,24 @@ memory usage: 1.2+ MB
 └── churn_analysis.ipynb   # Notebook principal
 
 
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-ómo usar este repositorio
+Cómo usar este repositorio
 Clona el repositorio:
 
-
 git clone https://github.com/tu_usuario/TelecomX_P2_Challange.git
+
 Instala los requerimientos:
 
   pip install -r requirements.txt
 
-Abre el notebook en Colab:
+Abre el notebook en Colab
 
 
- Flujo del Proyecto
+Flujo del Proyecto
 Preprocesamiento de Datos
 
-Limpieza de datos, codificación de variables categóricas
+Limpieza de datos,
+
+codificación de variables categóricas
 
 Escalado de variables numéricas
 
@@ -196,17 +143,15 @@ Métricas utilizadas: AUC-ROC, Recall, Precisión, F1-Score
 
 Comparación y selección del Champion Model
 
-Modelo Champion: XGBoost
+Modelo elegido ( Champion): **XGBoost**
 
-Mejor balance entre recall y capacidad discriminativa (AUC)
+* Mejor balance entre recall y capacidad discriminativa (AUC)
 
 Importancia de variables:
 
-Contrato a dos años (Contract_TwoYear)
-
-Tipo de internet (InternetService_Fiber optic)
-
-Antigüedad del cliente (customer_tenure)
+* Contrato a dos años (Contract_TwoYear)
+* Tipo de internet (InternetService_Fiber optic)
+* Antigüedad del cliente (customer_tenure)
 
 Prueba en entorno productivo
 
