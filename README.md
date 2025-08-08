@@ -6,7 +6,7 @@ Este proyecto tiene como objetivo predecir la evasión (churn) de clientes de un
 
 ---
 
-## 📁 Contenidos
+##  Contenidos
 
 - [Objetivo del proyecto](#objetivo-del-proyecto)
 - [Contexto de negocio](#contexto-de-negocio)
@@ -22,24 +22,47 @@ Este proyecto tiene como objetivo predecir la evasión (churn) de clientes de un
 
 ---
 
-## 🎯 Objetivo del proyecto
+## Objetivo del proyecto
 
 Identificar a los clientes con mayor probabilidad de abandonar la compañía utilizando técnicas de análisis de datos y modelos de predicción supervisada.
+generar una  modelo que pueda ser usando en ambientes productivos  y generar concluciones que ayuden a enfrentar y adelantarse a la posibilidad de abondono de la compañia haciendo recomendaciones de trabajo con las variables mas  relevantes.
+
 
 ---
 
-## 🧠 Contexto de negocio
+##  Contexto de negocio
 
 La retención de clientes es clave en las empresas de telecomunicaciones. Este proyecto busca apoyar al área comercial y de atención al cliente con información predictiva que permita implementar estrategias proactivas para reducir la pérdida de clientes.
 
 ---
 
-## 📦 Dataset
+##  Dataset
 
-El dataset contiene información demográfica, de servicios contratados y comportamiento histórico de clientes, incluyendo si abandonaron o no la compañía.  
-- Fuente: [describir si es pública, simulada o confidencial]
-- Número de registros: XXXX
-- Variables clave: género, tipo de contrato, servicios adicionales, mensualidad, historial de pagos, etc.
+El dataset, contiene información demográfica, de servicios contratados y comportamiento histórico de clientes, incluyendo si abandonaron o no la compañía.  
+, nace desde el archivo "TelecomX_Data.json"   el que es convertido y tratado  su estructura original esta compuesta por 7.267 registros y 21 columnas  las cuales se detalla  acontinuacion:
+ #   Column                     Non-Null Count  Dtype  
+---  ------                     --------------  -----  
+ 0   customerID                 7267 non-null   object 
+ 1   Churn                      7267 non-null   object 
+ 2   customer_gender            7267 non-null   object 
+ 3   customer_SeniorCitizen     7267 non-null   int64  
+ 4   customer_Partner           7267 non-null   object 
+ 5   customer_Dependents        7267 non-null   object 
+ 6   customer_tenure            7267 non-null   int64  
+ 7   phone_PhoneService         7267 non-null   object 
+ 8   phone_MultipleLines        7267 non-null   object 
+ 9   internet_InternetService   7267 non-null   object 
+ 10  internet_OnlineSecurity    7267 non-null   object 
+ 11  internet_OnlineBackup      7267 non-null   object 
+ 12  internet_DeviceProtection  7267 non-null   object 
+ 13  internet_TechSupport       7267 non-null   object 
+ 14  internet_StreamingTV       7267 non-null   object 
+ 15  internet_StreamingMovies   7267 non-null   object 
+ 16  account_Contract           7267 non-null   object 
+ 17  account_PaperlessBilling   7267 non-null   object 
+ 18  account_PaymentMethod      7267 non-null   object 
+ 19  account_Charges_Monthly    7267 non-null   float64
+ 20  account_Charges_Total      7267 non-null   object 
 
 ---
 
@@ -73,16 +96,12 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 Clona el repositorio:
 
 
-git clone https://github.com/tu_usuario/proyecto_telecomX_ML.git
+git clone https://github.com/tu_usuario/TelecomX_P2_Challange.git
 Instala los requerimientos:
 
+  pip install -r requirements.txt
 
-pip install -r requirements.txt
-Abre el notebook en Jupyter o Colab:
-
-
-jupyter notebook proyecto_telecomX_ML.ipynb
-🧠
+Abre el notebook en Colab:
 
 
  Flujo del Proyecto
@@ -99,20 +118,13 @@ Selección de variables relevantes
 Modelado Predictivo
 
 Entrenamiento y evaluación de modelos:
-
-Regresión Logística
-
-K-Nearest Neighbors
-
+* Baseline
+* Regresión Logística
+KNN
 Árbol de Decisión
-
 Random Forest
-
 XGBoost ✅
-
 LightGBM
-
-SVM
 
 Balanceo con SMOTE
 
