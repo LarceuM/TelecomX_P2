@@ -96,7 +96,8 @@ memory usage: 1.2+ MB
 └── churn_analysis.ipynb   # Notebook principal
 
 ```
-##Análisis exploratorio
+## Análisis exploratorio
+
 ###Preprocesamiento de Datos
 
 ###Limpieza de datos,
@@ -109,10 +110,11 @@ memory usage: 1.2+ MB
 
 ###Selección de variables relevantes
 
-###Modelado Predictivo
-```
-```
-##Entrenamiento y evaluación de modelos:
+...
+
+## Modelado predictivo
+
+###Entrenamiento y evaluación de modelos:
 * Baseline
 * Regresión Logística
 * KNN
@@ -121,12 +123,12 @@ memory usage: 1.2+ MB
 * XGBoost ✅
 * LightGBM
 
-##Balanceo con SMOTE
+###Balanceo con SMOTE
 
-##Ajuste de umbral de clasificación
-```
-```
-##Evaluación de Modelos
+###Ajuste de umbral de clasificación
+...
+
+## Resultados
 
 Métricas utilizadas: 
 * AUC-ROC,
@@ -145,8 +147,7 @@ Métricas utilizadas:
 * Contrato a dos años (Contract_TwoYear)
 * Tipo de internet (InternetService_Fiber optic)
 * Antigüedad del cliente (customer_tenure)
-```
-```
+
 ##Prueba en entorno productivo
 
 Se construye un set de datos sintéticos para simular la aplicación del modelo en producción.
@@ -157,22 +158,8 @@ Se construye un set de datos sintéticos para simular la aplicación del modelo 
 | **LightGBM**     | 0.816   | 0.832  | Alta     | Muy competitivo. Más rápido que XGBoost.               |
 | **RandomForest** | 0.806   | 0.837  | Alta     | Buen rendimiento, pero menor capacidad discriminativa. |
 
-
-##Recomendaciones Estratégicas
-Basado en las variables más importantes del modelo Champion (XGBoost):
-
-* Incentivar contratos de largo plazo: Los clientes con contrato de dos años presentan menor propensión a cancelar.
-* Evaluar la experiencia de clientes con internet de fibra óptica: Este grupo muestra mayor riesgo de churn.
-* Retener a clientes nuevos (<12 meses): Son más propensos a irse. Estrategias de onboarding o beneficios exclusivos pueden ayudar.
-* Revisar métodos de pago: Quienes usan Electronic check tienen mayor tasa de churn. Puede implicar menor fidelización.
-
-##Análisis exploratorio
->Se realizaron análisis visuales y estadísticos para entender las variables más asociadas al abandono de clientes. Entre los hallazgos:
-
-* Los clientes con contratos mensuales tienden a abandonar más.
-* Los que no tienen servicios adicionales (como internet o soporte técnico) muestran mayor churn.
-
-Adicionalmente se agrego un dashboard para visualizar los resultados
+...
+## Cómo ejecutar el proyecto
 
 ##Cómo usar este repositorio
 ###Clona el repositorio:
@@ -188,8 +175,26 @@ Ejecuta los notebooks
   conectese a colab , suba el archivo
   suba el data set
   ejecute
-```
-```
+...
+## Recomendaciones y próximos pasos
+
+Basado en las variables más importantes del modelo Champion (XGBoost):
+
+* Incentivar contratos de largo plazo: Los clientes con contrato de dos años presentan menor propensión a cancelar.
+* Evaluar la experiencia de clientes con internet de fibra óptica: Este grupo muestra mayor riesgo de churn.
+* Retener a clientes nuevos (<12 meses): Son más propensos a irse. Estrategias de onboarding o beneficios exclusivos pueden ayudar.
+* Revisar métodos de pago: Quienes usan Electronic check tienen mayor tasa de churn. Puede implicar menor fidelización.
+
+##Análisis exploratorio
+>Se realizaron análisis visuales y estadísticos para entender las variables más asociadas al abandono de clientes. Entre los hallazgos:
+
+* Los clientes con contratos mensuales tienden a abandonar más.
+* Los que no tienen servicios adicionales (como internet o soporte técnico) muestran mayor churn.
+
+Adicionalmente se agrego un dashboard para visualizar los resultados
+
+...
+
 Autor
 Lorenzo Arceu Morla
 Proyecto de análisis predictivo en el contexto de cancelación de servicios en telecomunicaciones.
