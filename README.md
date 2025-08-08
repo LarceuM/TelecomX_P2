@@ -136,8 +136,8 @@ Se procede a la carga de los datos desde la planilla Excel generado en el Challa
 >* LightGBM
 
 * Balanceo con SMOTE
-> Se evaluan todos los modelos con un vbalannce de tipo SMOTE , mejorando el desempeño de algunos modelos se utiliza la matriz dde confucion y la cuerva RoC 
-* Ajuste de umbral de clasificación
+> Se evaluan todos los modelos con un vbalannce de tipo SMOTE , mejorando el desempeño de algunos modelos se utiliza la Matriz de Confusion y la cuerva RoC
+> Importtancia de Variables y  Ajuste de umbral de clasificación
 ...
 
 ## Resultados
