@@ -106,24 +106,33 @@ Se procede a la carga de los datos desde la planilla Excel generado en el Challa
 >* Activos 73.4 %
 >* Churn 26.6 %
 
-###Escalado de variables numéricas
+* Normalización o Estandarización
+>* 'customer_tenure' Modelo de Normalizacion StandardScaler, Tiene rango amplio (0–72), y afecta distancia/pesos.
+>* 'account_Charges_Monthly', Modelo de Normalizacion StandardScaler, Diferencias fuertes entre cargos bajos y altos.
+>* 'account_Charges_Total', Modelo de Normalizacion Log y StandardScaler, Escala muy asimétrica y valores extremos
 
-###Análisis de correlación y multicolinealidad
+* Correlación y Selección de Variables , se analizo la correlacion de las variables ademas se grafico la matriz de correlacion y se genero el VIF , con la intencion de determinar las variables mas relevantes.
 
-###Selección de variables relevantes
-
+* Selección de variables relevantes, se genera un subconjunto del DataFrame con las variables sugeridas desde el analisis
+*     'internet_InternetService_Fiber optic',
+*     'account_PaymentMethod_Electronic check',
+*     'account_PaperlessBilling_Yes',
+*     'account_Charges_Monthly_scaled',
+*     'customer_SeniorCitizen',
+*     'account_Contract_Two year',
+*     'customer_tenure_scaled'
 ...
 
 ## Modelado predictivo
 
-###Entrenamiento y evaluación de modelos:
-* Baseline
-* Regresión Logística
-* KNN
-* Árbol de Decisión
-* Random Forest
-* XGBoost ✅
-* LightGBM
+* Entrenamiento y evaluación de modelos
+>* Baseline
+>* Regresión Logística
+>* KNN
+>* Árbol de Decisión
+>* Random Forest
+>* XGBoost ✅
+>* LightGBM
 
 ###Balanceo con SMOTE
 
