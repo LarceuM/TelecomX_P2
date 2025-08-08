@@ -126,7 +126,6 @@ Se procede a la carga de los datos desde la planilla Excel generado en el Challa
 ...
 
 ## Modelado predictivo
-
 * Entrenamiento y evaluación de modelos
 >* Baseline
 >* Regresión Logística
@@ -137,7 +136,7 @@ Se procede a la carga de los datos desde la planilla Excel generado en el Challa
 >* LightGBM
 
 * Balanceo con SMOTE
-
+> Se evaluan todos los modelos con un vbalannce de tipo SMOTE , mejorando el desempeño de algunos modelos se utiliza la matriz dde confucion y la cuerva RoC 
 * Ajuste de umbral de clasificación
 ...
 
