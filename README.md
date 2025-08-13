@@ -12,7 +12,6 @@ Este proyecto tiene como objetivo predecir la evasión (churn) de clientes de un
 - [Contexto de negocio](#contexto-de-negocio)
 - [Dataset](#dataset)
 - [Herramientas utilizadas](#herramientas-utilizadas)
-- [Estructura del proyecto](#estructura-del-proyecto)
 - [Análisis exploratorio](#análisis-exploratorio)
 - [Modelado predictivo](#modelado-predictivo)
 - [Resultados](#resultados)
@@ -83,19 +82,7 @@ memory usage: 1.2+ MB
 
 ---
 
-## Estructura del proyecto
 
-```bash
-📦 churn-prediction
-├── data/                  # Archivos de datos (limpios o crudos)
-├── notebooks/             # Jupyter Notebooks
-├── src/                   # Código fuente (funciones, módulos)
-├── models/                # Modelos entrenados (opcional)
-├── README.md
-├── requirements.txt       # Librerías necesarias
-└── churn_analysis.ipynb   # Notebook principal
-
-```
 ## Análisis exploratorio
 
 * Preprocesamiento de Datos
